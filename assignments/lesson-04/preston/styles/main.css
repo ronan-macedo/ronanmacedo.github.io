@@ -1,0 +1,77 @@
+/*main style document for preston-4.html*/
+header
+{
+    background-color: lightgreen;
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+}
+
+header .logo, .title
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 2rem;
+}
+
+.logo 
+{
+    float: left;
+    width: 20%;
+}
+
+.logo img 
+{
+    width: 100%;
+}
+
+.title h1
+{
+    color: goldenrod;
+    font-family: 'Arial';
+    font-size: 5em;
+}
+
+.motto
+{
+    color: darkgreen;
+    font-family: 'Arial';
+    font-size: 1.5em;
+}
+
+body
+{
+    background-color: white;
+}
+
+nav
+{
+    background-color: darkgreen;
+    font-family: 'Arial Narrow';
+    font-size: 2em;
+    text-align: center;
+}
+
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li
+{
+    margin: 0 0 .75rem 0;
+    padding: .5rem;
+}
+
+li a
+{
+    color: white;
+    text-decoration: none;
+    width: 100%;
+}
+
+li:hover 
+{
+    background-color: lightgreen;
+}
