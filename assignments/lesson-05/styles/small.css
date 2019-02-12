@@ -54,6 +54,7 @@ header .logo, .title, .weather
 body
 {
     background-color: white;
+    width: 100%
 }
 
 nav
