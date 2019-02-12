@@ -3,7 +3,7 @@
 header
 {
     background-color: lightgreen;
-    padding: 1rem 0 0 0;
+    padding: 1rem 0 0 .5rem;
     text-align: center;
 }
 
@@ -11,18 +11,23 @@ header .logo, .title, .weather
 {
     display: inline-block;
     vertical-align: middle;
-    margin: 2rem;
 }
 
 .logo 
 {
     float: left;
+    margin: 0 .5rem 0 0;
     width: 20%;
 }
 
 .logo img 
 {
     width: 80%;
+}
+
+.title
+{
+    margin: 0 auto 1rem auto;
 }
 
 .title h1
@@ -45,6 +50,7 @@ header .logo, .title, .weather
     border: 1px solid white;
     border-radius: 2rem;
     float: right;
+    margin: 0 1rem 0 .5rem;
     width: 20%;
 }
 
