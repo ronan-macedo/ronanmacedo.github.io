@@ -1,0 +1,213 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+/*small screen style document for preston-7.html*/
+/*header styles*/
+header
+{
+    display: flex;
+    background-color: lightgreen;
+    flex-direction: row;
+    padding: 1rem 0 0 .5rem;
+}
+
+.logo 
+{
+    margin: 0 .5rem 0 0;
+    width: 30%;
+}
+
+.logo img 
+{
+    width: 100%;
+}
+
+.title
+{
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 1rem auto;
+}
+
+.title h1
+{
+    color: goldenrod;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.motto
+{
+    color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .65em;
+}
+
+.weather
+{
+    display: none;
+}
+/*nav styles*/
+body
+{
+    background-color: white;
+    width: 100%
+}
+
+nav button
+{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    margin: .5rem;
+}
+
+nav button:hover 
+{
+    background-color: lightgreen;
+    color: darkgreen;
+}
+
+nav
+{
+    background-color: darkgreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.75em;
+    text-align: center;
+}
+
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li
+{
+    margin: 0 0 .75rem 0;
+    padding: .5rem;
+}
+
+li a
+{
+    color: white;
+    text-decoration: none;
+    width: 100%;
+}
+
+li:hover 
+{
+    background-color: lightgreen;
+}
+
+li.homelink
+{
+    background-color: goldenrod;
+}
+
+.hide
+{
+    display: none;
+}
+/*main styles*/
+main h1 
+{
+    color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.hero
+{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 1rem auto;
+    position: relative;
+}
+
+.hero img
+{
+    margin: 0 5% 0 5%;
+    width: 90%;
+}
+
+.weathersummary
+{
+    background-color: lightgreen;
+    border: 1px solid darkgreen;
+    border-radius: 2rem;
+    left: 1rem;
+    position: absolute;
+    padding: .5rem;
+    top: .5rem;
+}
+
+.weathersummary h3
+{
+    font-size: 1em;
+}
+
+.label
+{
+    font-size: .75em;
+}
+
+.forecast 
+{
+    display: none;
+}
+
+.mainarticle
+{
+    background-color: lightgreen;
+    border: 1px solid darkgreen;
+    margin: 6.5rem .5rem 1rem .5rem;
+    padding: 0 2rem .5rem 2rem;    
+}
+
+.articletitle h2
+{
+    color: goldenrod;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+}
+
+.articletitle h3
+{
+    color: darkgreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    font-style: italic;
+}
+
+.mainarticle p
+{
+    color: darkgreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    text-align: justify;
+}
+
+.mainarticle img
+{
+    border: 1px solid darkgreen;
+    float: left;
+    margin: 0 .5rem 1rem 0;
+    width: 100%;
+}
+/*footer styles*/
+footer
+{
+    background-color: darkgreen;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-small;
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+}
