@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Table Build Assignment</title>
+        <meta name="description" content="This simple table example for CIT 230 Table Build Assignmet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <style>
+            body
+            {
+                font-family: 'Ubuntu', sans-serif;
+                text-align: center;
+            }
+
+            table
+            {
+                border-collapse: collapse;
+                box-shadow: 10px 10px 10px gray; 
+                margin: 5% 40% 0 35%;
+            }
+
+            table thead th
+            {
+                background-color: #7fb9c2; 
+                border: 1px solid gray;
+                color: black;
+                font-size: xx-large;
+                padding: 1rem;
+            }
+            
+            table tbody th, td
+            {
+                border: 1px solid gray;
+                font-size: large;
+                padding: .5rem;
+            }
+
+            table tbody th
+            {
+                background-color: #628ca6;
+                color: white;
+            }
+
+            table tbody tr
+            {
+                background-color: #e7f0ed;
+                color: black;
+            }
+
+            table tbody tr:nth-child(odd) 
+            {
+                background-color: #e7ffed;
+            }
+
+            #goal
+            {
+                background-color: #628ca6;
+                color: white;
+            }
+
+            table tfoot td
+            {
+                background-color: #7fb9c2; 
+                border: 1px solid gray;
+                color: black;
+                font-size: small;
+                padding: .25rem;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">ACME Wildwest</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Period</th>
+                        <th>Sales</th>
+                        <th>Sales Goal</th>
+                    </tr>
+                    <tr>
+                        <td>August</td>
+                        <td>&dollar; 3,590</td>
+                        <td>&dollar; 4,000</td>
+                    </tr>
+                    <tr>
+                        <td>September</td>
+                        <td>&dollar; 4,420</td>
+                        <td>&dollar; 5,000</td>
+                    </tr>
+                    <tr>
+                        <td>Octoper</td>
+                        <td>&dollar; 4,870</td>
+                        <td>&dollar; 5,000</td>
+                    </tr>
+                    <tr>
+                        <td>November</td>
+                        <td>&dollar; 8,610</td>
+                        <td id="goal">&dollar; 7,500</td>
+                    </tr>
+                    <tr>
+                        <td><i>Black Friday</i></td>
+                        <td colspan="2">&dollar; 3,200</td>
+                    </tr>
+                    <tr>
+                        <td>December</td>
+                        <td>&dollar; 6,820</td>
+                        <td>&dollar; 7,500</td>
+                    </tr>
+                </tbody>    
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Compiled 12.20.2020 by bRauls</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </main>
+    </body>
+</html>
