@@ -117,7 +117,80 @@ li.homelink:hover
     display: none;
 }
 /*main styles*/
+main h1 
+{
+    color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+}
 
+form
+{
+    color: darkgreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    margin: 1rem 0 1rem 0;
+    padding: 0;
+    width: 100%
+}
+
+form fieldset
+{
+    background-color: lightgreen;
+    border: transparent;
+    border-radius: 10px;
+    margin: .1rem 0 .1rem 0;
+}
+
+form fieldset legend
+{
+    font-size: 1.2em;
+}
+
+#info
+{
+    font-size: smaller;
+    text-align: start;
+}
+
+input, select, textarea
+{
+    border-radius: 10px;
+    color: darkgreen;
+    font-size: small;
+    padding: .25rem;
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=number]
+{
+    width: 80%;
+}
+
+form div
+{
+    margin: 1rem 0 1rem 0;
+}
+
+.indanger input[type=radio]
+{
+    margin: .5rem 0 .5rem 0;
+}
+
+.personal input:invalid 
+{
+    color: red;
+}
+
+form input[type="submit"]
+{
+    background-color: darkgreen;
+    border: 1px solid darkgreen;
+    color: white;
+    font-size: xx-large;
+    height: 50px;
+    width: 50%;
+}
 /*footer styles*/
 footer
 {
