@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Gallery</title>
+        <meta name="description" content="This is the photo gallery of 365 forecast website.">
+        <link rel="stylesheet" media="screen and (min-width: 1080px)" href="styles/main.css">
+        <link rel="stylesheet" media="screen and (min-width: 480px) and (max-width: 1080px)" href="styles/medium.css">
+        <link rel="stylesheet" media="screen and (max-width: 480px)" href="styles/small.css">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="logo">   
+                <img src="../images/logo.png" alt="website logo">
+            </div>
+            <div class="title">
+                <h1>365 Forecast</h1>
+                <div class="motto">
+                    <h2>"Your every day forecast!"</h2>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <button onclick="toggleMenu()">&equiv; Menu</button>
+            <ul id="mynav" class="hide">
+                <li class="homelink">
+                    <a class="home" href="#">Home</a>
+                </li>
+                <li>
+                    <a href="../preston-8.html">Preston</a>
+                </li>
+                <li>
+                    <a href="#">Soda Springs</a>
+                </li>
+                <li>
+                    <a href="#">Fish Haven</a>
+                </li>
+                <li>
+                    <a href="../page-stormcenter/stormcenter.html">Storm Center</a>
+                </li>
+                <li>
+                    <a href="gallery-7.html">Gallery</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Gallery</h1>
+            <div class="gallery">
+                <figure>
+                    <img src="images/new-york.jpg" alt="new-york">
+                    <figcaption>New York City</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/daylight-countryside.jpg" alt="daylight-countryside">
+                    <figcaption>Daylight Countryside</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/countryside.jpg" alt="countryside">
+                    <figcaption>Countryside with Paragliders</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/blue-water.jpg" alt="blue-water">
+                    <figcaption>Beach with Wooden Hunts</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/beach.jpg" alt="beach">
+                    <figcaption>A Beach from the Sky</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/aurora.jpg" alt="aurora-borealis">
+                    <figcaption>Arctic Aurora Borealis</figcaption>
+                </figure>
+            </div>        
+        </main>
+        <footer>
+            &copy;2019 365 Forecast | CIT 230 | Ronan Macedo | <span id="currentdate"></span>
+        </footer>
+        <script src="../scripts/currentdate.js"></script>
+        <script src="../scripts/togglemenu.js"></script>
+    </body>
+</html>
