@@ -71,46 +71,46 @@
                 </fieldset><br>
                 <fieldset>
                     <legend>Storm Information:</legend>
-                        <div>
-                            Storm Date:<br>
-                            <input type="date" name="stormedate"><br>
-                        </div>
-                        <div>    
-                            Storm Type:<br>
-                            <input name="stormlist" list="stormlist"><br>
-                            <datalist id="stormlist">
-                                <option value="Flash Flood"></option>
-                                <option value="Hail"></option>
-                                <option value="Hurricane"></option>
-                                <option value="Thunderstorm"></option>
-                                <option value="Tornado"></option>
-                            </datalist>
-                        </div>
-                        <div>    
-                            Storm Severity:<br>
-                            <input type="range" name="stormrange" id="rating" value="5" max="10" min="1" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                            <span id="ratingvalue">5</span><br> 
-                        </div>
-                        <div>    
-                            Storm Region:<br>
-                            <select name="stormregion">
-                                <option value="selectregion" disabled>Select Region...</option>
-                                <option value="preston">Preston</option>
-                                <option value="sodasprings">Soda Springs</option>
-                                <option value="fishhaven">Fish Haven</option>
-                            </select><br>
-                        </div>
-                        <div class="indanger">
-                            Your In-Danger Level:<br>
-                            <input type="radio" name="in-danger" value="yes" checked>Yes<br>
-                            <input type="radio" name="in-danger" value="maybe">Maybe<br>
-                            <input type="radio" name="in-danger" value="no">No<br>
-                        </div>    
-                        <div>    
-                            Additional Information or Comments:<br>    
-                            <textarea name="comment" rows="10" cols="30" placeholder="Your comment here."></textarea><br>
-                        </div>
-                    </fieldset><br>
+                    <div>
+                        Storm Date:<br>
+                        <input type="date" name="stormedate"><br>
+                    </div>
+                    <div>    
+                        Storm Type:<br>
+                        <input name="stormlist" list="stormlist"><br>
+                        <datalist id="stormlist">
+                            <option value="Flash Flood"></option>
+                            <option value="Hail"></option>
+                            <option value="Hurricane"></option>
+                            <option value="Thunderstorm"></option>
+                            <option value="Tornado"></option>
+                        </datalist>
+                    </div>
+                    <div>    
+                        Storm Severity:<br>
+                        <input type="range" name="stormrange" id="rating" value="5" max="10" min="1" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">5</span><br> 
+                    </div>
+                    <div>    
+                        Storm Region:<br>
+                        <select name="stormregion">
+                            <option value="selectregion" disabled>Select Region...</option>
+                            <option value="preston">Preston</option>
+                            <option value="sodasprings">Soda Springs</option>
+                            <option value="fishhaven">Fish Haven</option>
+                        </select><br>
+                    </div>
+                    <div class="indanger">
+                        Your In-Danger Level:<br>
+                        <input type="radio" name="in-danger" value="yes" checked>Yes<br>
+                        <input type="radio" name="in-danger" value="maybe">Maybe<br>
+                        <input type="radio" name="in-danger" value="no">No<br>
+                    </div>    
+                    <div>    
+                        Additional Information or Comments:<br>    
+                        <textarea name="comment" rows="10" cols="30" placeholder="Your comment here."></textarea><br>
+                    </div>
+                </fieldset><br>
                 <input name="send" type="submit" value="Send"><br>
             </form>
         </main>
