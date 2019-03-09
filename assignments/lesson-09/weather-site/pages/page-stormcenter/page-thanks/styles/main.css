@@ -1,0 +1,143 @@
+/*main style document for stormcenter.html*/
+body
+{
+    background-color: white;
+    width: 100%;
+}
+/*header styles*/
+header
+{
+    display: flex;
+    background-color: lightgreen;
+    flex-direction: row;
+    padding: 1rem 0 0 .5rem;
+}
+
+.logo 
+{
+    margin: 0;
+    width: 25%;
+}
+
+.logo img 
+{
+    width: 75%;
+}
+
+.title
+{
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 5rem;
+}
+
+.title h1
+{
+    color: goldenrod;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5em;
+}
+
+.motto
+{
+    color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+}
+
+
+/*nav styles*/
+nav button
+{
+    display: none;
+}
+
+ul 
+{
+    background-color: darkgreen;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+li a
+{
+    
+    color: white;
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a.home
+{
+    background-color: goldenrod;
+    color: white;
+}
+
+li a.home:hover
+{
+    background-color: gold;
+}
+
+li:hover:not(.home) 
+{
+    background-color: lightgreen;
+}
+/*main styles*/
+main
+{
+    margin: 10% 20% 10% 20%;
+}
+
+main h1 
+{
+    color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+main p
+{
+    color: darkgreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+main a 
+{
+    background-color: darkgreen;
+    color: white;
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+main a:hover
+{
+    background-color: lightgreen;
+    color: darkgreen;
+}
+/*footer styles*/
+footer
+{
+    background-color: darkgreen;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+}
