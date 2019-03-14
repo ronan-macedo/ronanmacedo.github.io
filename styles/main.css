@@ -13,10 +13,9 @@ body {
     color: black;
 }
 
-h1 {
-    font-size: 2rem;
-    color: whitesmoke;
-    padding: 1em;
+header h1 {
+    font-size: 4em;
+    color: white;
 }
 
 h2 {
@@ -29,11 +28,28 @@ h2 {
 li {
     margin: 0 0 0 2em;
     padding: .75em 0 .5em 0;
+    list-style: none;
+}
+
+li a
+{
+    color: green;
+    text-decoration: none;
+}
+
+li a:hover
+{
+    color: lightgreen;
 }
 
 header, footer, footer a {
     text-align: center;
-    background-color:limegreen;
+    background-color: green;
+}
+
+header
+{
+    padding: 1.2rem;
 }
 
 header img {
@@ -44,5 +60,17 @@ header img {
 }
 
 footer {
+    color: white;
     font-size: small;
+}
+
+footer a
+{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover
+{
+    color: lightgreen;
 }
