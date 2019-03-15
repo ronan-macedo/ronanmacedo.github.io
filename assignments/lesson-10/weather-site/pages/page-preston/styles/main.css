@@ -66,7 +66,7 @@ header
     width: 50%
 }
 
-.weather h2
+.weather span
 {
     color: darkgreen;
     font-family: Arial, Helvetica, sans-serif;

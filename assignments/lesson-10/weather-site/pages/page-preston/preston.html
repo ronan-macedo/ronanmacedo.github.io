@@ -23,8 +23,8 @@
                 </div>
             </div>
             <div class="weather">
-                <img src="images/sunny.png" alt="sunny">
-                <h2>Sunny</h2>
+                <img src="images/placeholder.png" alt="current-condition" id="icon">
+                <span id="current"></span>
             </div>
         </header>
         <nav>
@@ -61,46 +61,36 @@
                     <section class="weathersummary">
                         <h3>Weather Summary</h3>
                         <div class="weatherdetails">
-                            <p class="label">Currently: Sunny</p>
-                            <p class="label">Temperature: <span id="temp">76</span> &deg;F</p>
-                            <p class="label">Humidity: 69%</p>
-                            <p class="label">Precipitation: 0 inches</p>
-                            <p class="label">Wind Speed: <span id="speed">5</span> mph</p>
-                            <p class="label">Wind Chill: <span id="windchill"></span> &deg;F</p>
+                            <p class="label">Currently:  <span id="cond"></span></p>
+                            <p class="label">Temperature:  <span id="temp"></span> &deg;F</p>
+                            <p class="label">Humidity:  <span id="hum"></span> &percnt;</p>
+                            <p class="label">Precipitation:  <span id="prec">0</span>"</p>
+                            <p class="label">Wind Speed:  <span id="speed"></span> mph</p>
+                            <p class="label">Wind Chill:  <span id="windchill"></span> &deg;F</p>
                         </div>
                     </section>
                 </div>
             <section class="forecast">
-                <h3>10 Day Forecast</h3>
+                <h3>High Temperature Forecast</h3>
                 <table>
                     <thead>
                         <tr>
                             <th>Day</th>
-                            <th>Wed</th>
-                            <th>Thu</th>
-                            <th>Fri</th>
-                            <th>Sat</th>
-                            <th>Sun</th>
-                            <th>Mon</th>
-                            <th>Tue</th>
-                            <th>Wed</th>
-                            <th>Thu</th>
-                            <th>Fri</th>
+                            <th><span id="day1"></span></th>
+                            <th><span id="day2"></span></th>
+                            <th><span id="day3"></span></th>
+                            <th><span id="day4"></span></th>
+                            <th><span id="day5"></span></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <th>Forecast</th>
-                            <td>89&deg;F</td>
-                            <td>87&deg;F</td>
-                            <td>78&deg;F</td>
-                            <td>75&deg;F</td>
-                            <td>72&deg;F</td>
-                            <td>73&deg;F</td>
-                            <td>76&deg;F</td>
-                            <td>74&deg;F</td>
-                            <td>75&deg;F</td>
-                            <td>78&deg;F</td>
+                            <td><span id="fore1"></span> &deg;F</td>
+                            <td><span id="fore2"></span> &deg;F</td>
+                            <td><span id="fore3"></span> &deg;F</td>
+                            <td><span id="fore4"></span> &deg;F</td>
+                            <td><span id="fore5"></span> &deg;F</td>
                         </tr>
                     </tbody>
                 </table>
@@ -148,6 +138,6 @@
         </footer>
         <script src="../../scripts/currentdate.js"></script>
         <script src="../../scripts/togglemenu.js"></script>
-        <script src="../../scripts/windchill.js"></script>
+        <script src="scripts/weatherinfo.js"></script>
     </body>
 </html>
