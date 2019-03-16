@@ -1,5 +1,5 @@
 var weatherRequest = new XMLHttpRequest();
-var weatherURL = '//api.openweathermap.org/data/2.5/weather?id=5604473&appid=b4949c9e08a60e52195a9d346a24fedc&units=imperial';
+var weatherURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=b4949c9e08a60e52195a9d346a24fedc&units=imperial';
 weatherRequest.open('GET', weatherURL, true);
 weatherRequest.send();
 
@@ -10,7 +10,7 @@ weatherRequest.onload = function() {
     /* placing the data in the weather icon */
     document.getElementById('current').innerHTML = weatherInfo.weather[0].main;
     var iconCode = weatherInfo.weather[0].icon;
-    var iconPath = "//openweathermap.org/img/w/" + iconCode + ".png";
+    var iconPath = "https://openweathermap.org/img/w/" + iconCode + ".png";
     document.getElementById('icon').src = iconPath;
     /* placing the data in the weather summary */
     document.getElementById('cond').innerHTML = weatherInfo.weather[0].main;
@@ -27,7 +27,7 @@ weatherRequest.onload = function() {
 }
 
 var forecastRequest = new XMLHttpRequest();
-var forecastURL = '//api.openweathermap.org/data/2.5/forecast?id=5604473&appid=b4949c9e08a60e52195a9d346a24fedc&units=imperial';
+var forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=b4949c9e08a60e52195a9d346a24fedc&units=imperial';
 forecastRequest.open ('GET', forecastURL, true);
 forecastRequest.send();
 
