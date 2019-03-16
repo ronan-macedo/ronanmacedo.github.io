@@ -1,6 +1,5 @@
 /*This javascript document displays the current date in the page*/
 var d = new Date();
-
 /* days of the week array */
 var weekday = new Array(7);
     weekday[0] = "Sunday";
@@ -10,7 +9,6 @@ var weekday = new Array(7);
     weekday[4] = "Thursday";
     weekday[5] = "Friday";
     weekday[6] = "Saturday";
-
 /* months of the year array */
 var month = new Array(12);
     month[0] = "January";
@@ -25,7 +23,6 @@ var month = new Array(12);
     month[9] = "October";
     month[10] = "November";
     month[11] = "December";
-
 /* display the result */
 var n = weekday[d.getDay()] + "," + " " + d.getDate() + " " + month[d.getMonth()] + " " + d.getFullYear();
     document.getElementById('currentdate').innerHTML = n; 

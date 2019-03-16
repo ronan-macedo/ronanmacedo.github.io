@@ -35,5 +35,39 @@ forecastRequest.onload = function () {
     var forecastInfo = JSON.parse(forecastRequest.responseText);
     /* json information */
     console.log(forecastInfo);
-    /* placing the data inside the table */
+    /* placing the days of the week in the table head */
+    var d = new Date();
+    /* define the days of the week */
+    var weekday = new Array(7);
+    weekday[0] = "Sunday";
+    weekday[1] = "Monday";
+    weekday[2] = "Tuesday";
+    weekday[3] = "Wednesday";
+    weekday[4] = "Thursday";
+    weekday[5] = "Friday";
+    weekday[6] = "Saturday";
+    weekday[7] = "Sunday";
+    weekday[8] = "Monday";
+    weekday[9] = "Tuesday";
+    weekday[10] = "Wednesday";
+    weekday[11] = "Thursday";
+    weekday[12] = "Friday";
+    weekday[13] = "Saturday";
+    /* create the five day sequence */
+    var one = weekday[d.getDay()];
+        document.getElementById('day1').innerHTML = one;
+    var two = weekday[d.getDay() + 1];
+        document.getElementById('day2').innerHTML = two;
+    var three = weekday[d.getDay() + 2];
+        document.getElementById('day3').innerHTML = three;
+    var four = weekday[d.getDay() + 3];
+        document.getElementById('day4').innerHTML = four;
+    var five = weekday[d.getDay() + 4];
+        document.getElementById('day5').innerHTML = five;
+    /* placing the data forecast in the table data */
+    document.getElementById('fore1').innerHTML = forecastInfo.list[0].main.temp_max.toFixed(0);
+    document.getElementById('fore2').innerHTML = forecastInfo.list[8].main.temp_max.toFixed(0);
+    document.getElementById('fore3').innerHTML = forecastInfo.list[16].main.temp_max.toFixed(0);
+    document.getElementById('fore4').innerHTML = forecastInfo.list[24].main.temp_max.toFixed(0);
+    document.getElementById('fore5').innerHTML = forecastInfo.list[32].main.temp_max.toFixed(0);
 }
