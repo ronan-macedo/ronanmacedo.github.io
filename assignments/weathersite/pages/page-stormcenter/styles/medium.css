@@ -1,0 +1,200 @@
+/* medium style document for stormcenter.html */
+body
+{
+    background-color: white;
+    width: 100%;
+}
+/*header styles*/
+header
+{
+    display: flex;
+    background-color: lightgreen;
+    flex-direction: row;
+    padding: 1rem 0 0 .5rem;
+}
+
+.logo 
+{
+    margin: 0 auto 0 0;
+}
+
+.logo img 
+{
+    width: 60%;
+}
+
+.title
+{
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 25% 0 0;
+}
+
+.title h1
+{
+    color: goldenrod;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+}
+
+.motto
+{
+    color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+/*nav styles*/
+nav button
+{
+    display: none;
+}
+
+ul 
+{
+    background-color: darkgreen;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+li a
+{
+    
+    color: white;
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a.home
+{
+    background-color: goldenrod;
+    color: white;
+}
+
+li a.home:hover
+{
+    background-color: gold;
+}
+
+li:hover:not(.home) 
+{
+    background-color: lightgreen;
+}
+/*main styles*/
+main h1 
+{
+    color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+form
+{
+    color: darkgreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2em;
+    margin: 1rem 10% 1rem 10%;
+}
+
+form fieldset
+{
+    background-color: lightgreen;
+    border: transparent;
+    border-radius: 10px;
+    margin: .5rem 0 .5rem 0;
+}
+
+form fieldset legend
+{
+    font-size: larger;
+}
+
+#info
+{
+    font-size: smaller;
+    text-align: start;
+}
+
+input, select, textarea
+{
+    border-radius: 10px;
+    color: darkgreen;
+    font-size: small;
+    padding: .25rem;
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=number]
+{
+    width: 40%;
+}
+
+form div
+{
+    margin: 1rem 0 1rem 0;
+}
+
+.indanger input[type=radio]
+{
+    margin: .5rem 0 .5rem 0;
+}
+
+.personal input:invalid 
+{
+    color: red;
+}
+
+form input[type="submit"]
+{
+    background-color: darkgreen;
+    border: 1px solid darkgreen;
+    color: white;
+    font-size: xx-large;
+    height: 50px;
+    width: 20%;
+}
+
+/* footer styles */
+
+footer
+{
+    background-color: darkgreen;
+    color: white;
+    display: grid;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+    grid-template-columns: 1fr;
+}
+
+.map 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.map iframe
+{
+    border: 5px solid lightgreen;
+    margin: .5rem 25% .5rem 
+}
+
+.footerend
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+    width: 100%;
+}

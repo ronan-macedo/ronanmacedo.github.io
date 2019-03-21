@@ -1,0 +1,220 @@
+/* main style document for index.html */
+
+body
+{
+    background-color: white;
+    width: 100%;
+}
+
+/* header styles */
+
+header
+{
+    display: flex;
+    background-color: lightgreen;
+    flex-direction: row;
+    padding: 1rem 0 0 .5rem;
+}
+
+.logo 
+{
+    margin: 0;
+    width: 25%;
+}
+
+.logo img 
+{
+    width: 75%;
+}
+
+.title
+{
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem 0 2rem;
+}
+
+.title h1
+{
+    color: goldenrod;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5em;
+}
+
+.motto
+{
+    color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+}
+
+/* nav styles */
+
+nav button
+{
+    display: none;
+}
+
+nav ul 
+{
+    background-color: darkgreen;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+nav li a
+{
+    
+    color: white;
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav li a.home
+{
+    background-color: goldenrod;
+    color: white;
+}
+
+nav li a.home:hover
+{
+    background-color: gold;
+}
+
+nav li:hover:not(.home) 
+{
+    background-color: lightgreen;
+}
+
+/* main styles */
+
+main
+{
+    display: flex;
+}
+
+.titlemain
+{
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    margin: .25rem .5rem 1rem .5rem;
+}
+
+.titlemain h1, h2 
+{
+    color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.titlemain h1
+{
+    font-size: 2em;
+}
+
+
+.titlemain img
+{
+    display: none;
+}
+
+.titleheader 
+{
+    background: lightgreen;
+    border: 1px solid darkgreen;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 2rem;
+}
+
+main section
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: .5rem 1rem 1rem 1rem; 
+}
+
+main article
+{
+    background: lightgreen;
+    border: 1px solid darkgreen;
+    border-radius: 5px;
+    margin: 0 1rem 0 1rem;
+    padding: .75rem;
+}
+
+main article img
+{
+    margin: 0 5% 0 5%;
+    width: 90%;
+}
+
+main article h2, p
+{
+    color: darkgreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main article h2 
+{
+    font-size: 1.75em;
+    text-align: center;
+}
+
+.articlemotto
+{
+    color: green;
+    font-style: oblique;
+    font-size: 1em;
+    text-align: center;
+}
+
+/* footer styles */
+
+footer
+{
+    background-color: darkgreen;
+    color: white;
+    display: grid;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+    grid-template-columns: 1fr;
+}
+
+.map 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.map iframe
+{
+    border: 5px solid lightgreen;
+    margin: .5rem 25% .5rem 
+}
+
+.footerend
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+    width: 100%;
+}
