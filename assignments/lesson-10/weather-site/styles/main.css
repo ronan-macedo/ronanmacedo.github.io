@@ -172,13 +172,13 @@ main article img
     width: 90%;
 }
 
-main article h3, p
+main article h2, p
 {
     color: darkgreen;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-main article h3 
+main article h2 
 {
     font-size: 1.75em;
     text-align: center;
@@ -198,8 +198,32 @@ footer
 {
     background-color: darkgreen;
     color: white;
+    display: grid;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: small;
+    grid-template-columns: 1fr;
+}
+
+.map 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.map iframe
+{
+    border: 5px solid lightgreen;
+    margin: .5rem 25% .5rem 
+}
+
+.footerend
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     padding: 1rem 0 1rem 0;
     text-align: center;
+    width: 100%;
 }

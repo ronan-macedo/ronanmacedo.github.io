@@ -1,13 +1,8 @@
-/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
-
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
-
 /*----------- apply a natural box layout model to all elements --------------*/
-
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-/* small screen style document for index.html */
-
+/* small screen style document for sodasprings.html */
 /* header styles */
 
 header
@@ -51,6 +46,11 @@ header
     font-size: .65em;
 }
 
+.weather
+{
+    display: none;
+}
+
 /* nav styles */
 
 body
@@ -83,131 +83,133 @@ nav
     text-align: center;
 }
 
-nav ul 
+ul 
 {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-nav li
+li
 {
     margin: 0 0 .75rem 0;
     padding: .5rem;
 }
 
-nav li a
+li a
 {
     color: white;
     text-decoration: none;
     width: 100%;
 }
 
-nav li:hover 
+li:hover 
 {
     background-color: lightgreen;
 }
 
-nav li.homelink
+li.homelink
 {
     background-color: goldenrod;
 }
 
-nav li.homelink:hover
+li.homelink:hover
 {
     background-color: gold;
 }
 
-nav .hide
+.hide
 {
     display: none;
 }
 
 /* main styles */
 
-main
-{
-    display: flex;
-}
-
-.titlemain
-{
-    display: flex;
-    justify-content: center;
-    flex-flow: row;
-    margin: .25rem .5rem 1rem .5rem;
-}
-
-.titlemain h1, h2 
+main h1 
 {
     color: darkgreen;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
     text-align: center;
 }
 
-.titlemain h1
+.hero
 {
-    font-size: 2em;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 1rem auto;
+    position: relative;
 }
 
-
-.titlemain img
-{
-    display: none;
-}
-
-.titleheader 
-{
-    background: lightgreen;
-    border: 1px solid darkgreen;
-    border-radius: 0 5px 5px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0;
-    padding: 2rem;
-}
-
-main section
-{
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: .5rem 1rem 1rem 1rem; 
-}
-
-main article
-{
-    background: lightgreen;
-    border: 1px solid darkgreen;
-    border-radius: 5px;
-    margin: 1rem 1rem 1rem 1rem;
-    padding: .75rem;
-}
-
-main article img
+.hero img
 {
     margin: 0 5% 0 5%;
     width: 90%;
 }
 
-main article h2, p
+.weathersummary
+{
+    background-color: lightgreen;
+    border: 1px solid darkgreen;
+    border-radius: 2rem;
+    left: 1rem;
+    position: absolute;
+    padding: .5rem;
+    top: .5rem;
+}
+
+.weathersummary h3
+{
+    font-size: 1em;
+}
+
+.label
+{
+    font-size: .75em;
+}
+
+.forecast 
+{
+    display: none;
+}
+
+.mainarticle
+{
+    background-color: lightgreen;
+    border: 1px solid darkgreen;
+    margin: 6.5rem .5rem 1rem .5rem;
+    padding: 0 2rem .5rem 2rem;    
+}
+
+.articletitle h2
+{
+    color: goldenrod;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+}
+
+.articletitle h3
 {
     color: darkgreen;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-main article h2 
-{
-    font-size: 1.75em;
-    text-align: center;
-}
-
-.articlemotto
-{
-    color: green;
-    font-style: oblique;
     font-size: 1em;
-    text-align: center;
+    font-style: italic;
+}
+
+.mainarticle p
+{
+    color: darkgreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    text-align: justify;
+}
+
+.mainarticle img
+{
+    border: 1px solid darkgreen;
+    float: left;
+    margin: 0 .5rem 1rem 0;
+    width: 100%;
 }
 
 /* footer styles */

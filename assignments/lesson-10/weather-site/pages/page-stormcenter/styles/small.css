@@ -2,8 +2,9 @@
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-/*small screen style document for stormcenter.html*/
-/*header styles*/
+/* small screen style document for stormcenter.html */
+/* header styles */
+
 header
 {
     display: flex;
@@ -45,7 +46,8 @@ header
     font-size: .65em;
 }
 
-/*nav styles*/
+/* nav styles */
+
 body
 {
     background-color: white;
@@ -116,7 +118,9 @@ li.homelink:hover
 {
     display: none;
 }
-/*main styles*/
+
+/* main styles */
+
 main h1 
 {
     color: darkgreen;
@@ -191,13 +195,38 @@ form input[type="submit"]
     height: 50px;
     width: 50%;
 }
-/*footer styles*/
+
+/* footer styles */
+
 footer
 {
     background-color: darkgreen;
     color: white;
+    display: grid;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: xx-small;
+    grid-template-columns: 1fr;
+}
+
+.map 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.map iframe
+{
+   display: none;
+}
+
+.footerend
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     padding: 1rem 0 1rem 0;
     text-align: center;
+    width: 100%;
 }

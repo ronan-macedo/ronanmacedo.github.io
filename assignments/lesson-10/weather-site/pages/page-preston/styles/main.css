@@ -1,4 +1,4 @@
-/*main style document for preston-8.html*/
+/*main style document for preston.html*/
 body
 {
     background-color: white;
@@ -253,13 +253,39 @@ main h1
     margin: 0 .5rem .5rem 1rem;
     overflow: auto;
 }
-/*footer styles*/
+
+/* footer styles */
+
 footer
 {
     background-color: darkgreen;
     color: white;
+    display: grid;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: small;
+    grid-template-columns: 1fr;
+}
+
+.map 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.map iframe
+{
+    border: 5px solid lightgreen;
+    margin: .5rem 25% .5rem 
+}
+
+.footerend
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     padding: 1rem 0 1rem 0;
     text-align: center;
+    width: 100%;
 }

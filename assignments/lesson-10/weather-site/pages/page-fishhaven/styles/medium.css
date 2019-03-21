@@ -1,10 +1,13 @@
-/* medium style document for preston.html */
+/* medium style document for fishhaven.html */
+
 body
 {
     background-color: white;
     width: 100%;
 }
-/*header styles*/
+
+/* header styles */
+
 header
 {
     display: flex;
@@ -72,7 +75,9 @@ header
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
 }
-/*nav styles*/
+
+/* nav styles */
+
 nav button
 {
     display: none;
@@ -116,7 +121,9 @@ li:hover:not(.home)
 {
     background-color: lightgreen;
 }
-/*main styles*/
+
+/* main styles */
+
 main h1 
 {
     color: darkgreen;
@@ -255,7 +262,8 @@ main h1
     margin: 0 .5rem .5rem 1rem;
     overflow: auto;
 }
-/*footer styles*/
+
+/* footer styles */
 
 footer
 {
