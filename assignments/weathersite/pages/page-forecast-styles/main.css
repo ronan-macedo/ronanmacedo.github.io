@@ -1,10 +1,13 @@
-/* medium style document for preston.html */
+/* main style document for forecast pages */
+
 body
 {
     background-color: white;
     width: 100%;
 }
-/*header styles*/
+
+/* header styles */
+
 header
 {
     display: flex;
@@ -15,12 +18,12 @@ header
 
 .logo 
 {
-    margin: 0 auto 0 0;
+    margin: 0 .5rem 0 0;
 }
 
 .logo img 
 {
-    width: 60%;
+    width: 80%;
 }
 
 .title
@@ -29,21 +32,21 @@ header
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: 0 .5rem 1rem .1rem;
+    margin: 0 auto 1rem auto;
 }
 
 .title h1
 {
     color: goldenrod;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 3em;
+    font-size: 5em;
 }
 
 .motto
 {
     color: darkgreen;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 1.25em;
 }
 
 .weather
@@ -56,8 +59,8 @@ header
     display: flex;
     flex-direction: row;
     height: 50%;
-    margin: 0 1rem 0 1rem;
-    width: 20%;
+    margin: 0 1rem 0 .5rem;
+    width: 15%;
 }
 
 .weather img
@@ -70,9 +73,11 @@ header
 {
     color: darkgreen;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 1.5em;
 }
-/*nav styles*/
+
+/* nav styles */
+
 nav button
 {
     display: none;
@@ -95,7 +100,7 @@ li a
     color: white;
     display: block;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1em;
+    font-size: 1.5em;
     padding: 1rem;
     text-align: center;
     text-decoration: none;
@@ -116,7 +121,9 @@ li:hover:not(.home)
 {
     background-color: lightgreen;
 }
-/*main styles*/
+
+/* main styles */
+
 main h1 
 {
     color: darkgreen;
@@ -127,19 +134,17 @@ main h1
 
 .hero
 {
+    color: white;
     display: flex;
     justify-content: center;
-    color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 1rem auto;
     position: relative;
-    width: 100%;
 }
 
 .hero img
 {
-    margin: 0 5% 0 5%;
-    width: 90%;
+    width: 100%;
 }
 
 .weathersummary
@@ -155,7 +160,7 @@ main h1
 
 .weathersummary h3
 {
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 .label
@@ -255,7 +260,8 @@ main h1
     margin: 0 .5rem .5rem 1rem;
     overflow: auto;
 }
-/*footer styles*/
+
+/* footer styles */
 
 footer
 {
