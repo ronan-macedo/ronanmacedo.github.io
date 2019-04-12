@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temple Inn & Suites | Temples</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" media="screen and (min-width: 480px) and (max-width: 1080px)" href="styles/medium.css">
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="styles/small.css">
+</head>
+<body>
+        <header>
+                <div class="logo">
+                    <img src="../../images/temple.png">
+                </div>
+                <div class="headertitle">
+                    <h1>Temple Inn & Suites</h1>
+                </div>
+            </header>
+            <nav>
+                <button onclick="toggleMenu()">&equiv; Menu</button>
+                <ul>
+                    <li>
+                        <a href="../../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../page-temple/temple.html">Temples</a>
+                    </li>
+                    <li>
+                        <a href="../page-reservation/reservation.html">Reservation</a>
+                    </li>
+                    <li>
+                        <a href="../page-service/service.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="../page-contact/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <main>
+                <h1>Brazil Temples</h1>
+                <div class="temples">
+                    <article>
+                        <h1 id="spname"></h1>
+                        <img src="images/sao_paulo_brazil_temple.jpg">
+                        <p>Address: <span id="spad"></span></p>
+                        <p>
+                            Services:
+                            <ul>
+                                <li id="sps1"></li>
+                                <li id="sps2"></li>
+                                <li id="sps3"></li>
+                                <li id="sps4"></li>
+                            </ul>
+                        </p>
+                        <p>
+                            History:
+                            <ul>
+                                <li id="sph1"></li>
+                                <li id="sph2"></li>
+                                <li id="sph3"></li>
+                                <li id="sph4"></li>
+                            </ul>
+                        </p>
+                        <p>
+                            <a href="https://www.lds.org/temples/details/sao-paulo-brazil-temple?lang=eng">Ordinance Schedule</a>
+                        </p>
+                        <p>
+                            Closure Schedule
+                            <ul>
+                                <li id="spc1"></li>
+                                <li id="spc2"></li>
+                                <li id="spc3"></li>
+                                <li id="spc4"></li>
+                                <li id="spc5"></li>
+                            </ul>
+                        </p>
+                        <p>
+                            Weather Summary: 
+                            <ul>
+                                <li>Currently:  <span id="spcond"></span></li>
+                                <li>Temperature:  <span id="sptemp"></span> &deg;F</li>
+                                <li>Humidity:  <span id="sphum"></span> &percnt;</li>
+                                <li>Wind Speed:  <span id="spspeed"></span> mph</li>
+                                <li>Wind Chill:  <span id="spwindchill"></span> &deg;F</li>
+                            </ul>
+                        </p>
+                    </article>
+                    <article>
+                        <h1 id="campname"></h1>
+                        <img src="images/campinas_brazil_temple.jpg">
+                        <p>Address: <span id="campad"></span></p>
+                        <p>
+                            Services:
+                            <ul>
+                                <li id="camps1"></li>
+                                <li id="camps2"></li>
+                                <li id="camps3"></li>
+                                <li id="camps4"></li>
+                            </ul>
+                        </p>
+                        <p>
+                            History:
+                            <ul>
+                                <li id="camph1"></li>
+                                <li id="camph2"></li>
+                                <li id="camph3"></li>                        
+                            </ul>
+                        </p>
+                        <p>
+                            <a href="https://www.lds.org/temples/details/campinas-brazil-temple?lang=eng">Ordinance Schedule</a>
+                        </p>
+                        <p>
+                            Closure Schedule
+                            <ul>
+                                <li id="campc1"></li>
+                                <li id="campc2"></li>
+                                <li id="campc3"></li>
+                                <li id="campc4"></li>
+                                <li id="campc5"></li>
+                                <li id="campc6"></li>
+                            </ul>
+                        </p>
+                        <p>
+                            Weather Summary: 
+                            <ul>
+                                <li>Currently:  <span id="campcond"></span></li>
+                                <li>Temperature:  <span id="camptemp"></span> &deg;F</li>
+                                <li>Humidity:  <span id="camphum"></span> &percnt;</li>
+                                <li>Wind Speed:  <span id="campspeed"></span> mph</li>
+                                <li>Wind Chill:  <span id="campwindchill"></span> &deg;F</li>
+                            </ul>
+                        </p>
+                    </article>
+                    <article>
+                        <h1 id="curname"></h1>
+                        <img src="images/curitiba_brazil_temple.jpg">
+                        <p>Address: <span id="curad"></span></p>
+                        <p>
+                            Services:
+                            <ul>
+                                <li id="curs1"></li>
+                                <li id="curs2"></li>
+                                <li id="curs3"></li>
+                                <li id="curs4"></li>
+                            </ul>
+                        </p>
+                        <p>
+                            History:
+                            <ul>
+                                <li id="curh1"></li>
+                                <li id="curh2"></li>
+                                <li id="curh3"></li>                        
+                            </ul>
+                        </p>
+                        <p>
+                            <a href="https://www.lds.org/temples/details/curitiba-brazil-temple?lang=eng">Ordinance Schedule</a>
+                        </p>
+                        <p>
+                            Closure Schedule
+                            <ul>
+                                <li id="curc1"></li>
+                                <li id="curc2"></li>
+                                <li id="curc3"></li>
+                                <li id="curc4"></li>
+                                <li id="curc5"></li>
+                                <li id="curc6"></li>
+                            </ul>
+                        </p>
+                        <p>
+                            Weather Summary: 
+                            <ul>
+                                <li>Currently:  <span id="curcond"></span></li>
+                                <li>Temperature:  <span id="curtemp"></span> &deg;F</li>
+                                <li>Humidity:  <span id="curhum"></span> &percnt;</li>
+                                <li>Wind Speed:  <span id="curspeed"></span> mph</li>
+                                <li>Wind Chill:  <span id="curwindchill"></span> &deg;F</li>
+                            </ul>
+                        </p>
+                    </article>
+                    <article>
+                        <h1 id="manname"></h1>
+                        <img src="images/manaus_brazil_temple.jpg">
+                        <p>Address: <span id="manad"></span></p>
+                        <p>
+                            Services:
+                            <ul>
+                                <li id="mans1"></li>
+                                <li id="mans2"></li>
+                                <li id="mans3"></li>
+                                <li id="mans4"></li>
+                            </ul>
+                        </p>
+                        <p>
+                            History:
+                            <ul>
+                                <li id="manh1"></li>
+                                <li id="manh2"></li>
+                                <li id="manh3"></li>                        
+                            </ul>
+                        </p>
+                        <p>
+                            <a href="https://www.lds.org/temples/details/manaus-brazil-temple?lang=eng">Ordinance Schedule</a>
+                        </p>
+                        <p>
+                            Closure Schedule
+                            <ul>
+                                <li id="manc1"></li>
+                                <li id="manc2"></li>
+                                <li id="manc3"></li>
+                                <li id="manc4"></li>
+                                <li id="manc5"></li>
+                            </ul>
+                        </p>
+                        <p>
+                            Weather Summary: 
+                            <ul>
+                                <li>Currently:  <span id="mancond"></span></li>
+                                <li>Temperature:  <span id="mantemp"></span> &deg;F</li>
+                                <li>Humidity:  <span id="manhum"></span> &percnt;</li>
+                                <li>Wind Speed:  <span id="manspeed"></span> mph</li>
+                                <li>Wind Chill:  <span id="manwindchill"></span> &deg;F</li>
+                            </ul>
+                        </p>
+                    </article>
+                </div>
+            </main>
+            <footer>
+                &copy; 2019 Temple Inn & Suites | CIT 230 | <span id="currentdate"></span>
+            </footer>
+            <script src="../../scripts/togglemenu.js"></script>
+            <script src="../../scripts/currentdate.js"></script>
+            <script src="../../scripts/templeinfo.js"></script>
+            <script src="../../scripts/weatherinfo.js"></script>
+</body>
+</html>
