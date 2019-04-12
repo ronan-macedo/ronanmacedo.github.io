@@ -1,11 +1,10 @@
-var templeRequest = new XMLHttpRequest;
+var templeRequest = new XMLHttpRequest();
 var templeData = '../json/templedata.json';
 templeRequest.open('GET', templeData, true);
-templeRequest.responseType = 'json';
 templeRequest.send()
 
 templeRequest.onload = function () {
-    var templeInfo = templeRequest.response;
+    var templeInfo = JSON.parse(templeRequest.responseText);
     /* JSON information */
     console.log(templeInfo);
     /* campinas data */
