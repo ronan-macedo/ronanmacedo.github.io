@@ -70,74 +70,21 @@ nav li a:hover:not(.home)
 
 /* main styles */
 
-.maintitle
-{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
 .maintitle h1
 {
     color: navy;
     text-align: center;
 }
 
-.maintitle
-{
-    color: black;
-    background-image: linear-gradient(whitesmoke, lightblue);
-    border: 1px solid navy;
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px gray;
-}
-
-.maintitle iframe
-{
-    box-shadow: 5px 5px 10px gray;
-}
-
-.form h1
-{   
-    text-align: center;
-}
-
-.form
-{
-    color: navy;
-}
-
-.form fieldset
-{
-    background-color: lightblue;
-    border: transparent;
-    border-radius: 15px;
-}
-
-.form #info
-{
-    text-align: start;
-    font-size: smaller;
-}
-
-.form fieldset legend
-{
-    font-weight: bold;
-    font-size: larger;
-}
-
-.form input, textarea
-{
-    border-radius: 15px;
-    color: navy;
-}
-
-.form input[type=submit]
+.maintitle a
 {
     background-color: navy;
-    border: 1px solid blue;
     color: white;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin: 0 25% 2rem 25%;
+    width: 50%;
 }
 
 /* footer styles */
@@ -177,30 +124,6 @@ footer
     {
         font-size: 1.5em;
     }
-
-    /* main style */
-    
-    .maintitle
-    {
-        margin: .5rem .5rem 1rem .5rem;
-        padding: 2rem;
-    }
-
-    .maintitle p
-    {
-        font-size: 1.2em;
-    }
-
-    .maintitle li
-    {
-        margin: .75rem 0 .75rem 0;
-        font-size: 1.2em;
-    }
-
-    .maintitle img 
-    {
-        width: 40%;
-    }
 }
 
 @media screen and (min-width: 480px) {
@@ -229,33 +152,10 @@ footer
 
     /* main styles */
 
-    .form form 
+    .maintitle a
     {
-        margin: .5rem;
-    }
-
-    .form div
-    {
-        margin: .5rem 0 .5rem 0;
-    }
-
-    .form input[type=text], input[type=email], input[type=tel]
-    {
-        width: 25%;
-    }
-
-    .form input, textarea
-    {
-        font-size: small;
-        padding: .25rem;
-    }
-
-    .form input[type="submit"]
-    {
-        font-size: larger;
-        height: 50px;
-        margin: .5rem 0 .5rem 0;
-        width: 20%;
+        
+        font-size: 1.5rem;
     }
 
     /* footer styles */

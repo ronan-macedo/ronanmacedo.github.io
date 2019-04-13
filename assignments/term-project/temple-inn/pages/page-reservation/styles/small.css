@@ -1,0 +1,124 @@
+/* small style document */
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
+
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* header styles */ 
+
+.logo 
+{
+    margin: 0 .25rem .5rem .5rem;
+}
+
+.headertitle
+{
+    margin: 0 .5rem 0 2.5rem;
+}
+
+.headertitle h1 
+{
+    font-size: 1.5em;
+}
+
+/* nav styles */
+
+nav button
+{
+    background-color: transparent;
+    border: none;
+    color: navy;
+    font-size: 1em;
+    margin: .5rem;
+}
+
+nav
+{
+    background: lightblue;
+    font-size: 1.75em;
+    text-align: center;
+}
+
+nav ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+nav li 
+{
+    margin: 0 0 .75rem 0;
+    padding: .5rem;
+}
+
+nav li a
+{
+    width: 100%
+}
+
+nav li.homelink 
+{
+    background-color: blue;
+}
+
+nav .hide 
+{
+    display: none;
+}
+
+/* main styles */
+
+.mainform h1
+{
+    font-size: 1.5em;
+}
+
+.mainform form 
+{
+    margin: 1rem 10% 1rem 10%;
+}
+
+.mainform fieldset 
+{
+    margin: 1rem 0 1rem 0;
+}
+
+.mainform div
+{
+    margin: 1rem 0 1rem 0;
+}
+
+.mainform input[type=text], input[type=email], input[type=tel], input[type=number]
+{
+    width: 90%;
+}
+
+.mainform input, select, textarea
+{
+    font-size: .75em;
+    padding: .25rem;
+}
+
+.mainform .special input[type="radio"]
+{
+    margin: .5rem 0 .5rem 0;
+}
+
+.mainform input[type="submit"]
+{
+    font-size: larger;
+    height: 50px;
+    width: 75%;
+}
+
+/* footer styles */
+
+footer 
+{
+    padding: .75rem;
+    font-size: xx-small;
+}

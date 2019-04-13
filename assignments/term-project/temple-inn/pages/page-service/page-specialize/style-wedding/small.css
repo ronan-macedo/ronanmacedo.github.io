@@ -72,25 +72,42 @@ nav .hide
 
 /* main styles */
 
-main h1
+.maintitle h1, .room h1
 {
-    font-size: 1.2em;
+    font-size: 1.2em
 }
 
-.temples
+.maintitle
 {
+    margin: .5rem .5rem 1rem .5rem;
+    padding: 2rem;
+}
+
+.maintitle p
+{
+    font-size: 1em;
+}
+
+.maintitle li
+{
+    margin: .75rem 0 .75rem 0;
+    font-size: .75em;
+}
+
+.maintitle img 
+{
+    width: 100%;
+}
+
+.foodgallery, .roomgallery
+{
+    text-align: center;
     grid-template-columns: 1fr;
 }
 
-.temples article
+.foodgallery img, .roomgallery img
 {
-    margin: 1rem 5% 1rem 5%;
-    padding: .75rem;
-}
-
-.temples article p, li
-{
-    font-size: 1em;
+    width: 100%;
 }
 
 /* footer styles */

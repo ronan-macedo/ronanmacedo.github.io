@@ -70,82 +70,30 @@ nav li a:hover:not(.home)
 
 /* main styles */
 
-.maintitle h1, .mainarticle h1, .maingallery h1, .invitation h1
-{   
+.maintitle h1, .room h1
+{
     color: navy;
     text-align: center;
 }
 
-.maintitle, .mainarticle
+.maintitle
 {
     color: black;
     background-image: linear-gradient(whitesmoke, lightblue);
     border: 1px solid navy;
     border-radius: 15px;
     box-shadow: 5px 5px 10px gray;
-    text-align: justify;
 }
 
-.maintitle figure, .mainarticle figure, .gallery figure
+.maintitle img, .foodgallery img, .roomgallery img
 {
-    text-align: center;
-}
-
-.maintitle a, .mainarticle a
-{
-    color: black;
-    text-decoration: none;
-}
-
-.maintitle a:hover, .mainarticle a:hover
-{
-    color: navy;
-}
-
-.maintitle figure img, .mainarticle figure img, .maingallery figure img, .invitation figure img
-{
-    border-radius: 15px;
     border: 1px solid navy;
+    border-radius: 15px;
 }
 
-.gallery 
+.roomgallery, .foodgallery
 {
     display: grid;
-    text-align: center;
-}
-
-.gallery img
-{
-    width: 100%;
-}
-
-.invitation 
-{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-}
-
-.invitation a 
-{
-    color: white;
-    background-color: navy;
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px gray;
-    position: absolute;
-    text-decoration: none;
-}
-
-.invitation a:hover
-{
-    color: navy;
-    background-color: lightblue;
-}
-
-.invitation img
-{
-    box-shadow: 5px 5px 10px gray;
 }
 
 /* footer styles */
@@ -186,72 +134,39 @@ footer
         font-size: 1.5em;
     }
 
-    /* main styles */
-
-    .maintitle, .mainarticle
+    /* main style */
+    
+    .maintitle
     {
         margin: .5rem .5rem 1rem .5rem;
         padding: 2rem;
     }
 
-    .maintitle p, .mainarticle p
+    .maintitle p
     {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
-    .maintitle figure 
+    .maintitle li
     {
-        margin: 0 1rem 1rem 1rem;
-        padding: 1rem;
+        margin: .75rem 0 .75rem 0;
+        font-size: 1em;
     }
 
-    .mainarticle figure 
-    {   
-        margin: 0 0 1rem 1rem;
-        padding: 1rem;
+    .maintitle img 
+    {
+        width: 20%;
     }
 
-    .maintitle figure img 
+    .foodgallery, .roomgallery
     {
-        width: 75%;
-    }
-
-    .mainarticle figure img 
-    {
-        width: 40%;
-    }
-
-    .gallery
-    {
+        text-align: center;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .gallery figure img
+    .foodgallery img, .roomgallery img
     {
-        box-shadow: 5px 5px 10px gray;
-    }
-
-    .invitation
-    {
-        margin: 2rem auto;
-    }
-
-    .invitation figure img
-    {
-        margin: 0 25% 0 25%;
-    }
-
-    .invitation img 
-    {
-        width: 50%;
-    }
-
-    .invitation a
-    {
-        right: 20rem;
-        bottom: 25px;
-        font-size: 1.25em;
-        padding: 1.5rem;
+        width: 100%;
     }
 }
 
@@ -281,17 +196,12 @@ footer
 
     /* main styles */
 
-    .maintitle figure 
+    .maintitle img 
     {
         float: right;
         overflow: auto;
     }
 
-    .mainarticle figure 
-    {
-        overflow: auto;
-    }
-    
     /* footer styles */
     
     footer
@@ -300,5 +210,3 @@ footer
         font-size: small;
     }
 }
-
-

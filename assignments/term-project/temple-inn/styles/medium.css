@@ -1,0 +1,88 @@
+/* medium style document */
+
+/* header styles */
+
+.logo 
+{
+    margin: 0 2rem 1rem 1rem;
+}
+
+.headertitle
+{
+    margin: 0 0 0 2rem;
+}
+
+.headertitle h1 
+{
+    font-size: 3em;
+}
+
+/* nav styles */
+
+nav li a 
+{
+    font-size: 1.25em;
+}
+
+/* main styles */
+
+.maintitle, .mainarticle
+{
+    margin: .5rem .5rem 1rem .5rem;
+    padding: 2rem;
+}
+
+.maintitle p, .mainarticle p
+{
+    font-size: 1em;
+}
+
+.maintitle figure 
+{
+    margin: 0 1rem 1rem 1rem;
+    padding: 1rem;
+}
+
+.mainarticle figure 
+{   
+    margin: 0 0 1rem 1rem;
+    padding: 1rem;
+}
+
+.maintitle figure img 
+{
+    width: 75%;
+}
+
+.mainarticle figure img 
+{
+    width: 40%;
+}
+
+.gallery
+{
+    grid-template-columns: 1fr 1fr;
+}
+
+.invitation
+{
+    margin: 2rem auto;
+}
+
+.invitation figure img
+{
+    margin: 0 25% 0 25%;
+}
+
+.invitation img 
+{
+    width: 50%;
+}
+
+.invitation a
+{
+    right: 15rem;
+    bottom: 25px;
+    font-size: 1em;
+    padding: 1rem;
+}

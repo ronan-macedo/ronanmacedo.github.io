@@ -1,0 +1,48 @@
+/* medium style document */
+
+/* header styles */
+
+.logo 
+{
+    margin: 0 2rem 1rem 1rem;
+}
+
+.headertitle
+{
+    margin: 0 0 0 2rem;
+}
+
+.headertitle h1 
+{
+    font-size: 3em;
+}
+
+/* nav styles */
+
+nav li a 
+{
+    font-size: 1.25em;
+}
+
+/* main styles */
+
+main h1
+{
+    font-size: 1.5em;
+}
+
+.temples
+{
+    grid-template-columns: 1fr;
+}
+
+.temples article
+{
+    margin: 1rem 15% 1rem 15%;
+    padding: .75rem;
+}
+
+.temples article p, li
+{
+    font-size: 1.1em;
+}

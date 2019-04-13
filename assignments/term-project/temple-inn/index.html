@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Temple Inn & Suites | Home</title>
-        <meta name="description" content="We have excellent accommodations for those who seek a place to stay near the Temple.">
+        <meta name="description" content="We have excellent accommodations for those who seek a place to stay near to the Temple.">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/main.css">
@@ -15,7 +15,7 @@
     <body>
         <header>
             <div class="logo">
-                <img src="images/temple.png">
+                <img src="images/temple.png" alt="logo">
             </div>
             <div class="headertitle">
                 <h1>Temple Inn & Suites</h1>
@@ -23,9 +23,9 @@
         </header>
         <nav>
             <button onclick="toggleMenu()">&equiv; Menu</button>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
+            <ul id="mynav" class="hide">
+                <li class="homelink">
+                    <a class="home" href="index.html">Home</a>
                 </li>
                 <li>
                     <a href="pages/page-temple/temple.html">Temples</a>
@@ -45,7 +45,7 @@
             <div class="maintitle">
                 <h1>A Place Set Apart</h1>
                 <figure>
-                    <img src="images/salt-lake-temple.jpg">
+                    <img src="images/salt-lake-temple.jpg" alt="salt-lake-temple">
                     <figcaption>Temple of Salt Lake City, Utah, USA</figcaption>
                 </figure>
                 <p>
@@ -70,7 +70,9 @@
             </div>
             <div class="mainarticle">
                 <h1>Blessings of Temple Worship</h1>
-                <img src="images/thomas-s-monson.jpg">
+                <figure>
+                    <img src="images/thomas-s-monson.jpg" alt="thomas-s-monson">
+                </figure>
                 <p>
                     “Why are so many willing to give so much in order to receive the blessings of the temple? 
                     Those who understand the eternal blessings which come from the temple know that no 
@@ -86,37 +88,43 @@
                     April 2011 general conference
                 </p>
             </div>
-            <div class="gallery">
+            <div class="maingallery">
                 <h1>Temples Around The World</h1>
-                <figure>
-                    <img src="images/accra-ghana-temple.jpg">
-                    <figcaption>Accra Temple, Ghana</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/buenos-airies-argentina-temple.jpg">
-                    <figcaption>Buenos Airies Temple, Argentina</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rome-italy-temple.jpg">
-                    <figcaption>Rome Temple, Italy</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/st-george-temple.jpg">
-                    <figcaption>St. George, USA</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/sydney-australia-temple.jpg">
-                    <figcaption>Sydney, Australia</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/tokyo-japan-temple.jpg">
-                    <figcaption>Tokyo, Japan</figcaption>
-                </figure>
+                <div class="gallery">
+                    <figure>
+                        <img src="images/accra-ghana-temple.jpg" alt="accra-ghana-temple">
+                        <figcaption>Accra Temple, Ghana</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/buenos-airies-argentina-temple.jpg" alt="buenos-airies-argentina-temple">
+                        <figcaption>Buenos Airies Temple, Argentina</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/rome-italy-temple.jpg" alt="rome-italy-temple">
+                        <figcaption>Rome Temple, Italy</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/st-george-temple.jpg" alt="st-george-temple">
+                        <figcaption>St. George, USA</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/sydney-australia-temple.jpg" alt="sydney-australia-temple">
+                        <figcaption>Sydney, Australia</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/seoul-korea-temple.jpg" alt="seoul-korea-temple">
+                        <figcaption>Seoul, Korea</figcaption>
+                    </figure>
+                </div>
             </div>
             <div class="invitation">
                 <h1>Make Your Hotel Reservation</h1>
-                <img src="images/attending-temple.jpg">
-                <a href="pages/page-reservation/reservation.html">Click here make your reservation</a>
+                <div>
+                    <figure>
+                        <img src="images/attending-temple.jpg" alt="attending-temple">
+                    </figure>
+                    <a href="pages/page-reservation/reservation.html">Click here make your reservation</a>
+                </div>
             </div>
         </main>
         <footer>

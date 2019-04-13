@@ -26,24 +26,40 @@ nav li a
 
 /* main style */
 
-.mainservices, .maintitle
+.maintitle h1, .room h1
+{
+    font-size: 1.2em
+}
+
+.maintitle
 {
     margin: .5rem .5rem 1rem .5rem;
     padding: 2rem;
 }
 
-.maintitle p, .mainservices p
+.maintitle p
 {
     font-size: 1em;
 }
 
-.mainservices li, .maintitle li
+.maintitle li
 {
     margin: .75rem 0 .75rem 0;
-    font-size: 1em;
+    font-size: .75em;
 }
 
 .maintitle img 
 {
     width: 40%;
+}
+
+.foodgallery, .roomgallery
+{
+    text-align: center;
+    grid-template-columns: 1fr;
+}
+
+.foodgallery img, .roomgallery img
+{
+    width: 100%;
 }

@@ -72,23 +72,12 @@ nav .hide
 
 /* main styles */
 
-main h1
+.maintitle h1 
 {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
-.temples
-{
-    grid-template-columns: 1fr;
-}
-
-.temples article
-{
-    margin: 1rem 5% 1rem 5%;
-    padding: .75rem;
-}
-
-.temples article p, li
+.maintitle a 
 {
     font-size: 1em;
 }

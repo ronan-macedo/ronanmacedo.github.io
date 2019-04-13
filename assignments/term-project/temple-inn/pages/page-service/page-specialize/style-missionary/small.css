@@ -72,25 +72,60 @@ nav .hide
 
 /* main styles */
 
-main h1
+.maintitle h1, .gallery h1, .form h1
+{
+    font-size: 1.25em;
+}
+
+.gallery img, .maintitle img
+{
+    margin: 0 10% 0 10%;
+    width: 80%;
+}
+
+.maintitle
+{
+    margin: .75rem .25rem .75rem .25rem;
+    padding: 0 .15rem 0 .15rem;
+}
+
+.form h1, legend
 {
     font-size: 1.2em;
 }
 
-.temples
+.form form 
 {
-    grid-template-columns: 1fr;
+    margin: 1rem 10% 1rem 10%;
 }
 
-.temples article
+.form fieldset 
 {
-    margin: 1rem 5% 1rem 5%;
-    padding: .75rem;
+    margin: 1rem 0 1rem 0;
 }
 
-.temples article p, li
+.form div
 {
-    font-size: 1em;
+    margin: 1rem 0 1rem 0;
+}
+
+.form input[type=text], input[type=email], input[type=tel]
+{
+    width: 90%;
+}
+
+.form input, textarea
+{
+    font-size: .75em;
+    padding: .25rem;
+}
+
+.form input[type="submit"]
+{
+    font-size: larger;
+    height: 50px;
+    margin: .25rem 0 .25rem 0;
+    width: 50%;
 }
 
 /* footer styles */

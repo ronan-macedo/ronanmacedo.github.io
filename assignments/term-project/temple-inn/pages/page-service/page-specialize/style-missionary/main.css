@@ -70,82 +70,79 @@ nav li a:hover:not(.home)
 
 /* main styles */
 
-.maintitle h1, .mainarticle h1, .maingallery h1, .invitation h1
-{   
+.maintitle h1, .gallery h1, .form h1
+{
     color: navy;
     text-align: center;
 }
 
-.maintitle, .mainarticle
+.maintitle
 {
     color: black;
     background-image: linear-gradient(whitesmoke, lightblue);
     border: 1px solid navy;
     border-radius: 15px;
     box-shadow: 5px 5px 10px gray;
-    text-align: justify;
 }
 
-.maintitle figure, .mainarticle figure, .gallery figure
+.maintitle img, .gallery img
 {
-    text-align: center;
-}
-
-.maintitle a, .mainarticle a
-{
-    color: black;
-    text-decoration: none;
-}
-
-.maintitle a:hover, .mainarticle a:hover
-{
-    color: navy;
-}
-
-.maintitle figure img, .mainarticle figure img, .maingallery figure img, .invitation figure img
-{
-    border-radius: 15px;
     border: 1px solid navy;
+    border-radius: 15px;
 }
 
-.gallery 
+.maintitle ul
+{
+    list-style-type: none;
+}
+
+.gallery
 {
     display: grid;
+    margin: 0;
     text-align: center;
 }
 
 .gallery img
 {
-    width: 100%;
+    width: 50%;
 }
 
-.invitation 
-{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-}
-
-.invitation a 
-{
-    color: white;
-    background-color: navy;
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px gray;
-    position: absolute;
-    text-decoration: none;
-}
-
-.invitation a:hover
+.form
 {
     color: navy;
-    background-color: lightblue;
 }
 
-.invitation img
+.form fieldset
 {
-    box-shadow: 5px 5px 10px gray;
+    background-color: lightblue;
+    border: transparent;
+    border-radius: 15px;
+}
+
+.form #info
+{
+    text-align: start;
+    font-size: smaller;
+}
+
+.form fieldset legend
+{
+    font-weight: bold;
+    font-size: larger;
+}
+
+.form input, textarea
+{
+    border-radius: 15px;
+    color: navy;
+}
+
+.form input[type=submit]
+{
+    background-color: navy;
+    border: 1px solid blue;
+    color: white;
 }
 
 /* footer styles */
@@ -186,72 +183,29 @@ footer
         font-size: 1.5em;
     }
 
-    /* main styles */
-
-    .maintitle, .mainarticle
+    /* main style */
+    
+    .maintitle
     {
         margin: .5rem .5rem 1rem .5rem;
-        padding: 2rem;
+        padding: 2rem 2rem 10rem .5rem;
     }
 
-    .maintitle p, .mainarticle p
+    .maintitle p
     {
-        font-size: 1.2em;
+        font-size: 2em;
     }
 
-    .maintitle figure 
+    .maintitle li
     {
-        margin: 0 1rem 1rem 1rem;
-        padding: 1rem;
+        margin: .75rem 0 .75rem 0;
+        font-size: 2em;
     }
 
-    .mainarticle figure 
-    {   
-        margin: 0 0 1rem 1rem;
-        padding: 1rem;
-    }
-
-    .maintitle figure img 
-    {
-        width: 75%;
-    }
-
-    .mainarticle figure img 
-    {
-        width: 40%;
-    }
-
-    .gallery
-    {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .gallery figure img
+    .maintitle img 
     {
         box-shadow: 5px 5px 10px gray;
-    }
-
-    .invitation
-    {
-        margin: 2rem auto;
-    }
-
-    .invitation figure img
-    {
-        margin: 0 25% 0 25%;
-    }
-
-    .invitation img 
-    {
-        width: 50%;
-    }
-
-    .invitation a
-    {
-        right: 20rem;
-        bottom: 25px;
-        font-size: 1.25em;
-        padding: 1.5rem;
+        width: 40%;
     }
 }
 
@@ -281,17 +235,57 @@ footer
 
     /* main styles */
 
-    .maintitle figure 
+    .maintitle h1, .gallery h1, .form h1
+    {
+        font-size: 1.5em;
+    }
+
+    .maintitle img 
     {
         float: right;
         overflow: auto;
     }
 
-    .mainarticle figure 
+    .gallery
     {
-        overflow: auto;
+        grid-template-columns: 1fr;
     }
-    
+
+    .gallery img
+    {
+        width: 80%;
+        margin: 0 10% 0 10%;
+    }
+
+    .form form 
+    {
+        margin: .5rem;
+    }
+
+    .form div
+    {
+        margin: .5rem 0 .5rem 0;
+    }
+
+    .form input[type=text], input[type=email], input[type=tel]
+    {
+        width: 25%;
+    }
+
+    .form input, textarea
+    {
+        font-size: small;
+        padding: .25rem;
+    }
+
+    .form input[type="submit"]
+    {
+        font-size: larger;
+        height: 50px;
+        margin: .5rem 0 .5rem 0;
+        width: 20%;
+    }
+
     /* footer styles */
     
     footer
@@ -300,5 +294,3 @@ footer
         font-size: small;
     }
 }
-
-

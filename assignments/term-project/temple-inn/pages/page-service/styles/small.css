@@ -1,0 +1,103 @@
+/* small style document */
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
+
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* header styles */ 
+
+.logo 
+{
+    margin: 0 .25rem .5rem .5rem;
+}
+
+.headertitle
+{
+    margin: 0 .5rem 0 2.5rem;
+}
+
+.headertitle h1 
+{
+    font-size: 1.5em;
+}
+
+/* nav styles */
+
+nav button
+{
+    background-color: transparent;
+    border: none;
+    color: navy;
+    font-size: 1em;
+    margin: .5rem;
+}
+
+nav
+{
+    background: lightblue;
+    font-size: 1.75em;
+    text-align: center;
+}
+
+nav ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+nav li 
+{
+    margin: 0 0 .75rem 0;
+    padding: .5rem;
+}
+
+nav li a
+{
+    width: 100%
+}
+
+nav li.homelink 
+{
+    background-color: blue;
+}
+
+nav .hide 
+{
+    display: none;
+}
+
+/* main styles */
+
+.mainservices, .maintitle
+{
+    margin: .5rem .5rem 1rem .5rem;
+    padding: 1rem;
+}
+
+.maintitle p, .mainservices p
+{
+    font-size: 1em;
+}
+
+.mainservices li, .maintitle li
+{
+    margin: .75rem 0 .75rem 0;
+    font-size: 1em;
+}
+
+.maintitle img 
+{
+    width: 100%;
+}
+
+/* footer styles */
+
+footer 
+{
+    padding: .75rem;
+    font-size: xx-small;
+}

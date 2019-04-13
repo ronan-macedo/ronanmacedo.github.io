@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Temple Inn & Suites | Services</title>
+    <meta name="description" content="Make your reservation now! We wish a marvelous experience in the Temple.">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="../../styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -14,7 +15,7 @@
 <body>
         <header>
                 <div class="logo">
-                    <img src="../../images/temple.png">
+                    <img src="../../images/temple.png" alt="logo">
                 </div>
                 <div class="headertitle">
                     <h1>Temple Inn & Suites</h1>
@@ -22,7 +23,7 @@
             </header>
             <nav>
                 <button onclick="toggleMenu()">&equiv; Menu</button>
-                <ul>
+                <ul id="mynav" class="hide">
                     <li>
                         <a href="../../index.html">Home</a>
                     </li>
@@ -32,8 +33,8 @@
                     <li>
                         <a href="../page-reservation/reservation.html">Reservation</a>
                     </li>
-                    <li>
-                        <a href="service.html">Services</a>
+                    <li class="homelink">
+                        <a class="home" href="service.html">Services</a>
                     </li>
                     <li>
                         <a href="../page-contact/contact.html">Contact Us</a>
@@ -41,7 +42,28 @@
                 </ul>
             </nav>
             <main>
-
+                <div class="maintitle">
+                    <h1>Our Services</h1>
+                    <img src="images/service.jpg" alt="service">
+                    <p>Free Services:</p>
+                        <ul>
+                            <li>Breakfast</li>
+                            <li>Exercise room</li>
+                            <li>Indoor pool</li>
+                            <li>WiFi high-speed internet access and smart TVs</li>
+                            <li>Parking</li>
+                            <li>Temple shuttle</li>
+                            <li>Playroomand and low-cost, short-term babysitting services for the children</li>
+                            <li>Family history consultation and family ordinance card service</li>
+                        </ul>
+                </div>
+                <div class="mainservices">
+                    <p>Specialized Services:</p>
+                        <ul>
+                            <li><a href="page-specialize/wedding.html">Wedding reception</a></li>
+                            <li><a href="page-specialize/missionary.html">Full-time temple missionaries</a></li>
+                        </ul>
+                </div>
             </main>
             <footer>
                 &copy; 2019 Temple Inn & Suites | CIT 230 | <span id="currentdate"></span>
